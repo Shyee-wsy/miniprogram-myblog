@@ -1,0 +1,7 @@
+<view class="body">
+  <view wx:for="{{blogList}}" class="blog" wx:key="item.id">
+    <view class="blogTitle" catchtap="toDetail" data-id="{{item.id}}" data-title="{{item.title}}">{{item.title}}<span class="tag">{{item.tag}}</span></view>
+    <view class="time">创建于：{{item.createdAt}} - 更新于：{{item.updatedAt}}</view> 
+  </view>
+  <!-- <button bindtap="fetchAllBlogs">获取文章</button> -->
+</view>
