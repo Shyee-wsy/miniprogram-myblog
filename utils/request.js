@@ -14,7 +14,7 @@ function getData(url,doSuccess){
 }
 
 function postData(url, postData, doSuccess,title){
-  let access_token = 'a7c31797410a8664684a6717e80157bb4bf86f44'
+  let access_token = ''
   wx.request({
     url: defaultUrl + url + '?access_token=' + access_token,
     data: postData,

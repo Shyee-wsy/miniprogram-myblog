@@ -39,7 +39,7 @@ Page({
     call.postData('/gists', postData, this.doSuccess, this.data.title)
 
     // wx.request({
-    //   url: 'https://api.github.com/gists?access_token=a7c31797410a8664684a6717e80157bb4bf86f44',
+    //   url: 'https://api.github.com/gists?access_token=',
     //   method: 'POST',
     //   data: {
     //     "public": true,
