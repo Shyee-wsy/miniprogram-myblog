@@ -1,1 +1,9 @@
 /* pages/blogDetails/index.wxss */
+.title{
+  font-size: 1.2rem;
+}
+.content{
+  font-size: 0.8rem;
+  margin-top: 20px;
+  font-weight: 300;
+}

@@ -1,2 +1,6 @@
 <!--pages/blogDetails/index.wxml-->
-
+<view class="container">
+  <view class="title">{{title}}<span class="tag">{{tag}}</span></view>
+  <view class="time"> 创建于：{{createdAt}} - 更新于：{{updatedAt}}</view>
+  <view class="content">{{content}}</view>
+</view>

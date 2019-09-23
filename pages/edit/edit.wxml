@@ -1,0 +1,10 @@
+<!--pages/edit/edit.wxml-->
+<view class="container">
+  <form bindsubmit="bindSave">
+    <input placeholder=" Title..." auto-focus="true" name="title"></input>
+    <input placeholder="标签" name="tag"></input>
+    <textarea placeholder="文章内容" name="content"></textarea>
+    <button form-type="submit">发布</button>
+    <button form-type="reset">重置</button>
+  </form>
+</view>

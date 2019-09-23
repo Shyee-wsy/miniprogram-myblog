@@ -1,10 +1,19 @@
 /**app.wxss**/
 .container {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  padding: 200rpx 0;
-  box-sizing: border-box;
+ padding: 0 30px;
 } 
+.time{
+  font-size: 0.5rem;
+  margin: 1rem 0;
+  color: darkred;
+}
+.tag{
+  text-align:center;
+  font-size: 0.5rem;
+  background-color:#f56c6c;
+  /* width: 60rpx; */
+  border-radius:5rpx;
+  padding: 8rpx;
+  margin: 0 0 20rpx 20rpx;
+  color: white;
+}

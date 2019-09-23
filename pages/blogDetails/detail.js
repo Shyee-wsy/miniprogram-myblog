@@ -1,4 +1,5 @@
 // pages/blogDetails/index.js
+// const comi = require('../../comi/comi.js')
 Page({
 
   /**
@@ -7,27 +8,37 @@ Page({
   data: {
     title: '',
     content: '',
-    id: null
+    id: null,
+    createdAt: '',
+    updatedAt: '',
+    tag: ''
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    var id = options.id
-    var title = options.title
+    // var id = options.id
+    var id = getApp().requestBlogDetailId
+    var title = getApp().requestBlogDetailTitle
+    console.log(id)
+    // var title = options.title
     this.setData({
       id: id,
       title: title
     })
     wx.request({
-      url: 'https://api.github.com/gists/?'+id ,
+      url: 'https://api.github.com/gists/'+id ,
       success: res => {
         let data = res.data
-        // console.log(data)
+        console.log(data)
+        // console.log(title)
         this.setData({
           title: Object.keys(data.files),
-          content: data.files[title].content
+          content: data.files[title].content,
+          createdAt: data.created_at,
+          updatedAt: data.updated_at,
+          tag: data.description
         })
       }
     })

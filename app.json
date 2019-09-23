@@ -2,7 +2,8 @@
   "pages": [
     "pages/index/index",
     "pages/logs/logs",
-    "pages/blogDetails/detail"
+    "pages/blogDetails/detail",
+    "pages/edit/edit"
    
   ],
   "window": {
